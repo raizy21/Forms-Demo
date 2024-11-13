@@ -51,24 +51,38 @@
       <!-- this button doesn't submit the form b/c of the "type" attribute -->
       <button type="button">Regular button (won't submit)</button>
       <!-- This button submits the form! -->
+       <!--file:///C:/tacos?username=&password=&color=%23000000&num=-->
+       <!-- file:///C:/tacos?username=Razvan-Andrei&password=123456&color=%23000000&num=21-->
       <button>Submit!!!</button>
       <!-- So does this one: -->
+      <!--file:///C:/tacos?username=Razvan-Andrei&password=123456&color=%23000000&num=21-->
+      <!--file:///C:/tacos?username=&password=&color=%23000000&num=-->
       <input type="submit" value="Click Me!" />
     </form>
+
+
+
+
+
+
+
     <hr />
     <!-- Outside of a form, no default behavior -->
     <button>Not Inside Form</button>
     <h2>Hijacking Searches</h2>
     <h3>Search Reddit</h3>
+    <!--https://www.reddit.com/search?q=new-->
     <form action="https://www.reddit.com/search">
       <input type="text" name="q" />
       <button>Search Reddit</button>
     </form>
+    <!--https://www.google.com/search?q=new-->
     <h3>Search Google</h3>
     <form action="https://www.google.com/search">
       <input type="text" name="q" />
       <button>Search Google</button>
     </form>
+    <!--https://www.youtube.com/results?search_query=new-->
     <h3>Search Youtube</h3>
     <form action="https://www.youtube.com/results">
       <input type="text" name="search_query" />
@@ -76,6 +90,8 @@
     </form>
 
     <h2>More Inputs!</h2>
+
+
     <form action="/birds">
       <input type="checkbox" name="agree_tos" id="agree" />
       <label for="agree">I agree to everything</label>
@@ -118,6 +134,8 @@
           placeholder="Type something here"
         ></textarea>
       </p>
+      <!-- file:///C:/birds?meal=fish&cheese_level=75&Requests%3F=-->
+       <!--file:///C:/birds?agree_tos=on&size=m&meal=veg&cheese_level=1&Requests%3F=TEXT-->
       <button>Submit</button>
     </form>
 
@@ -147,7 +165,7 @@
         <label for="website">Website</label>
         <input type="url" id="website" name="website" />
       </p>
-
+      <!--file:///C:/dummy?first=Razvan-Andrei&username=Razvan&email=andreiraizy%40gmail.com&website=https%3A%2F%2Fwww.google.de%2F-->
       <button>Submit</button>
     </form>
   </body>
